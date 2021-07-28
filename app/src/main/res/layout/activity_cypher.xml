@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".CypherActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Encrypt Message"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/encryptVar1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edtprofile_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:gravity="start"
+            android:hint="Type Here..."
+            android:padding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/encryptbtVar1"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/send_btn"
+            android:onClick="encyptMethod"
+            app:backgroundTint="@color/teal_700" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/encrypttvVar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/spartan_bold"
+        android:padding="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <Button
+        android:id="@+id/encyptbtCopy"
+        android:layout_width="@dimen/_105sdp"
+        android:text="Encrypt "
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_3sdp"
+        android:onClick="copyEncrypt"
+        app:backgroundTint="@color/teal_700" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Decrypt Message"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/decetVar1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/edtprofile_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:gravity="start"
+            android:hint="Type Here..."
+            android:padding="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/debtVar1"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/send_btn"
+            android:onClick="decryptMethod"
+            app:backgroundTint="@color/teal_700" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detvVar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/spartan_bold"
+        android:padding="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp" />
+
+    <Button
+        android:id="@+id/decbtVar2"
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_3sdp"
+        android:text="Decrypt "
+        android:onClick="copyDecrypt"
+        app:backgroundTint="@color/teal_700" />
+
+
+</LinearLayout>
